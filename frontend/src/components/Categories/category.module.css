@@ -1,0 +1,135 @@
+.gridBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  padding-bottom:60px ;
+}
+
+.gridItem {
+  background-color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+.gridItem img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.topcontainer{  
+  background-color:#EFEFF6 ;
+  margin-top: 18vh;
+  
+}
+.containerStyle{
+  margin: 2px 18vw;
+  
+}
+
+.Head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+      color: #302D3A;
+    font-size: 16px;
+    font-weight: 100;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.gridItem{
+  height: 100%;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border-radius: 16px;
+  padding-top: 16px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.05);
+
+}
+
+.gridItem p{
+ font-weight: 500;
+font-size: 18px;
+margin: 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(136, 214, 222)  ;
+  color: aliceblue;
+  text-decoration: none;
+  /* border: 1px solid #000; */
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.button:hover {
+   box-shadow:0 0 10px rgba(136, 214, 222, 0.5); 
+}
+
+@media (max-width: 576px) {
+  .Head{
+    align-items: center;
+    justify-content: center;
+  }
+  .gridBox {
+    grid-template-columns: repeat(1, 1fr);
+  }
+   .button{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+   .topcontainer{
+    margin-top: 28vh;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 997px) {
+  .Head{
+    align-items: center;
+    justify-content: space-between;
+    margin-right:12px ;
+    margin-left:12px ;
+    
+  }
+  .button{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+  .gridBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .containerStyle{
+    padding: 0;
+   margin: 0 6vw;
+  }
+  .topcontainer{
+    margin-top: 22vh;
+  }
+}
+
+@media (min-width: 996px) and (max-width: 1186px) {
+ 
+  .gridBox {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .containerStyle{
+    padding: 0;
+    margin: 0 8vw;
+  }
+}
+
+@media (min-width: 1186px) {
+  .gridBox {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .containerStyle{
+    padding: 0;
+    margin: 0 16vw;
+  }
+}

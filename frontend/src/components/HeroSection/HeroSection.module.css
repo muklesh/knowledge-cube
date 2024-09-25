@@ -1,0 +1,123 @@
+.hero {
+  text-align: center;
+  filter: brightness(1);
+}
+
+.heading {
+  color: #fff;
+  margin-top: 50px;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Martian Mono", monospace;
+}
+
+.subheading {
+  font-size: 20px;
+  color: #fff;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(136, 214, 222);
+  color: aliceblue;
+  text-decoration: none;
+  /* border: 1px solid #000; */
+}
+
+.button:hover {
+  box-shadow: 0 0 10px rgba(136, 214, 222, 0.5);
+}
+
+@media (max-width: 650px) {
+  .heading {
+    font-size: 30px;
+  }
+  .subheading {
+    font-size: 18px;
+  }
+}
+
+.gridBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  background-color: #ffffff;
+  position: relative;
+  top: 70vh;
+  font-size: 12px;
+  margin: 0 auto;
+  max-width: 900px;
+  box-shadow: 0 0 30px -15px rgba(223, 10, 10, 0.4);
+  padding: 1rem auto;
+}
+
+.gridItem {
+  padding: 1rem auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.gridItem img {
+  padding: 6px;
+  border-radius: 40px;
+  background-color: black;
+  border-width: 15px;
+}
+
+.item2 img {
+  padding: 6px;
+  border-radius: 40px;
+  background-color: rgb(136, 214, 222);
+  border-width: 15px;
+}
+.gridItem h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 476px) {
+  .gridBox {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+    margin: 0 1rem;
+    margin-top: -65vh;
+  }
+}
+
+@media (min-width: 476px) and (max-width: 865px) {
+  .gridBox {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    padding: 0.6rem;
+    margin: 0 1.2rem;
+    margin-top: -60vh;
+    min-width: 56vh;
+  }
+  .gridItem:nth-child(3) {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 864px) and (max-width: 976px) {
+  .gridBox {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+    margin: 0 2rem;
+    margin-top: -60vh;
+  }
+}
+
+@media (min-width: 976px) {
+  .gridBox {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+    margin: 0 auto;
+    margin-top: -60vh;
+  }
+}

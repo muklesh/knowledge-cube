@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  position: relative;
+}
+.cover {
+  background-image: url(../../assets/hero-banner3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+.coverOverlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  bottom: 21%;
+  left: 0;
+  right: 0;
+  min-height: 80vh;
+  z-index: 0; ;
+}
